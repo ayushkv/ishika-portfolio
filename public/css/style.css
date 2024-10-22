@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  /* Navbar (Fixed) */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Hero Section without background image */
+  #hero {
+    height: 100vh; /* Full height of the viewport */
+    background-color: #007bff; /* Solid color for hero section */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center-align text */
+    margin-top: 0px; /* Adjust margin to compensate for the fixed navbar */
+  }
+  
+  /* About Section */
+  #about {
+    padding-top: 50px; /* Ensure enough space from the hero section */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .resume-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+  }
+  
+  /* About Section Styling */
+  #about img.profile-img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #007bff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+/* Portfolio Section */
+#portfolio {
+    padding-top: 50px;
+  }
+  
+  .portfolio-item {
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .portfolio-item h4 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .portfolio-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Hover Effects */
+  .portfolio-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1); /* Zoom image on hover */
+  }
+  
+  /* Scroll Animation */
+  .portfolio-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .portfolio-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  /* Alternating Background Colors */
+  .section-bg-1 {
+    background-color: #f1f1f1;
+  }
+  
+  .section-bg-2 {
+    background-color: #fff;
+  }
+  
+  /* Contact Form Styling */
+  form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #hero {
+      text-align: center;
+    }
+  
+    .resume-btn {
+      width: 100%;
+    }
+  
+    #about img.profile-img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
